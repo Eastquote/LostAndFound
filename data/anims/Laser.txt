@@ -1,0 +1,17 @@
+1bf82c7e4bc3345641b7bd293f07f6ae
+
+# Meta
+name Laser
+num_sprites 3
+dims_image 44 60
+dims_frame 20 28
+dims_padded 22 30
+dims_grid 2 2
+padding 1
+origin 10 14
+framerate 5
+
+# Anims
+Closed 0
+Idle 1
+Open 2

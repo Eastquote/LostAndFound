@@ -1,0 +1,16 @@
+d116c1ccbe35002b49b0ff07506732e4
+
+# Meta
+name SamusAimDown
+num_sprites 2
+dims_image 34 68
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 1 2
+padding 1
+origin 16 16
+framerate 10
+palettize 1
+# Anims
+SamusAimDown 0
+SamusFireDown 1

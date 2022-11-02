@@ -1,0 +1,14 @@
+e57f51df2f5b2120f63d017b575c6a06
+
+# Meta
+name GameLogo
+num_sprites 1
+dims_image 161 19
+dims_frame 159 17
+dims_padded 161 19
+dims_grid 1 1
+padding 1
+framerate 30
+
+# Anims
+Logo 0

@@ -1,0 +1,15 @@
+3bdd54d864cf705da17823f1ad612679
+
+# Meta
+name SamusBallTrans
+num_sprites 2
+dims_image 34 68
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 1 2
+padding 1
+origin 16 16
+framerate 30
+palettize 1
+# Anims
+SamusBallTrans 0 1

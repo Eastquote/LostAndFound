@@ -1,0 +1,15 @@
+eead635796236411408a295fa7772b15
+
+# Meta
+name GariBall
+num_sprites 4
+dims_image 100 120
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 2 2
+padding 1
+origin 24 32
+framerate 30
+palettize 0
+# Anims
+GariBall 0 1 2 3

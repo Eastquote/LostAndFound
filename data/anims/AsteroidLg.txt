@@ -1,0 +1,15 @@
+bc0e05169a87d0c366e37af396182702
+
+# Meta
+name AsteroidLg
+num_sprites 2
+dims_image 119 126
+dims_frame 117 61
+dims_padded 119 63
+dims_grid 1 2
+padding 1
+origin 56 31
+framerate 20
+
+# Anims
+AsteroidLg 0 1

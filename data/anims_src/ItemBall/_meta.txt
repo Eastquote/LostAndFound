@@ -1,0 +1,2 @@
+origin 12 16
+framerate 10

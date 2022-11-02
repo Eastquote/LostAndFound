@@ -1,0 +1,16 @@
+2b1c734fa6952635e586fd659b635104
+
+# Meta
+name DialogueBkg
+num_sprites 2
+dims_image 212 48
+dims_frame 210 22
+dims_padded 212 24
+dims_grid 1 2
+padding 1
+origin 105 0
+framerate 6
+palettize 0
+# Anims
+Anna 0
+Gari 1

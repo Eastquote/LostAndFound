@@ -1,0 +1,16 @@
+c73a6228891b17579463caa7c85c5aec
+
+# Meta
+name LightSmall
+num_sprites 2
+dims_image 32 64
+dims_frame 30 30
+dims_padded 32 32
+dims_grid 1 2
+padding 1
+origin 15 15
+framerate 10
+palettize 0
+# Anims
+Flat 0
+Penumbra 1

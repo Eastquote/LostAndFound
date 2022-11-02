@@ -1,0 +1,15 @@
+d3fe94dbab2afee20f99a11624228c6b
+
+# Meta
+name Bomb
+num_sprites 2
+dims_image 10 20
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 1 2
+padding 1
+origin 4 4
+framerate 20
+
+# Anims
+Bomb 0 1

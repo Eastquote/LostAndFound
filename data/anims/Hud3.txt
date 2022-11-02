@@ -1,0 +1,15 @@
+e6e470d527a651f1da24dbdc43fb84e5
+
+# Meta
+name Hud3
+num_sprites 2
+dims_image 18 20
+dims_frame 16 8
+dims_padded 18 10
+dims_grid 1 2
+padding 1
+origin 0 0
+framerate 0
+
+# Anims
+Missile 0 1

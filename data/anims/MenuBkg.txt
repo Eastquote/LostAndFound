@@ -1,0 +1,15 @@
+60b66afc53b59fb3410498824a43dad5
+
+# Meta
+name MenuBkg
+num_sprites 1
+dims_image 342 246
+dims_frame 340 244
+dims_padded 342 246
+dims_grid 1 1
+padding 1
+origin 170 122
+framerate 10
+palettize 0
+# Anims
+Bkg 0

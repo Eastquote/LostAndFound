@@ -1,0 +1,15 @@
+5c77b94e5e3fd7561ed586a19937c752
+
+# Meta
+name FactJibit
+num_sprites 3
+dims_image 14 22
+dims_frame 5 9
+dims_padded 7 11
+dims_grid 2 2
+padding 1
+origin 0 0
+framerate 0
+palettize 0
+# Anims
+Jibit 0 1 2

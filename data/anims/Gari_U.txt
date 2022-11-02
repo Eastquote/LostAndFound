@@ -1,0 +1,21 @@
+165436f3789d547394bb1bd87f6a326e
+
+# Meta
+name Gari_U
+num_sprites 14
+dims_image 200 240
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 4 4
+padding 1
+origin 24 32
+framerate 15
+palettize 0
+# Anims
+GariAimUp_U 0
+GariFall_U 1
+GariFireAir_U 2
+GariFire_U 3
+GariIdle_U 4
+GariJump_U 5
+GariRun_U 6 7 8 9 10 11 12 13

@@ -1,0 +1,15 @@
+edf2a4297fd19377b6faeb2dab7f08e2
+
+# Meta
+name MissilePickup
+num_sprites 2
+dims_image 18 36
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 1 2
+padding 1
+origin 8 8
+framerate 15
+
+# Anims
+Small 0 1

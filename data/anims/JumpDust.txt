@@ -1,0 +1,15 @@
+98f0729ad57f69b2caa8893da2c730f2
+
+# Meta
+name JumpDust
+num_sprites 13
+dims_image 96 92
+dims_frame 22 21
+dims_padded 24 23
+dims_grid 4 4
+padding 1
+origin 11 20
+framerate 20
+palettize 0
+# Anims
+JumpDust 0 1 2 3 4 5 6 7 8 9 10 11 12

@@ -1,0 +1,15 @@
+deee00df559bbf272ebe7238294f4df9
+
+# Meta
+name FaceButtonPrompt
+num_sprites 1
+dims_image 10 10
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 1 1
+padding 1
+origin 0 0
+framerate 6
+palettize 0
+# Anims
+DiamondLeft 0

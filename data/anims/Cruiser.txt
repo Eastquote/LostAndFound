@@ -1,0 +1,16 @@
+a5f51d901d93c235c0fd6317eec1f6a4
+
+# Meta
+name Cruiser
+num_sprites 4
+dims_image 36 36
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 2 2
+padding 1
+origin 8 8
+framerate 6
+palettize 1
+# Anims
+Closed 0
+Open 1 2 3

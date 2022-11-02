@@ -1,0 +1,3 @@
+origin 11 20
+framerate 20
+palettize 0

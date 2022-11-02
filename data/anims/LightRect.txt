@@ -1,0 +1,17 @@
+7b322b37c4d764044ae0a04d6d98fbb0
+
+# Meta
+name LightRect
+num_sprites 3
+dims_image 22 36
+dims_frame 20 10
+dims_padded 22 12
+dims_grid 1 3
+padding 1
+origin 10 0
+framerate 10
+palettize 0
+# Anims
+Core 0
+Penumbra 1
+SlicePenumbra 2

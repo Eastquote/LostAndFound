@@ -1,0 +1,15 @@
+9e683b68174a41bb575ba83aad8e3d22
+
+# Meta
+name AsteroidMed
+num_sprites 3
+dims_image 126 116
+dims_frame 61 56
+dims_padded 63 58
+dims_grid 2 2
+padding 1
+origin 29 29
+framerate 20
+
+# Anims
+AsteroidMed 0 1 2

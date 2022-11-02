@@ -1,0 +1,19 @@
+cafec7dca6fedca53cbfd64616be78d6
+
+# Meta
+name Gari_L
+num_sprites 12
+dims_image 200 180
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 4 3
+padding 1
+origin 24 32
+framerate 15
+palettize 0
+# Anims
+GariFall_L 0
+GariFire_L 1
+GariIdle_L 2
+GariJump_L 3
+GariRun_L 4 5 6 7 8 9 10 11

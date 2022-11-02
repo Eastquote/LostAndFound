@@ -1,0 +1,15 @@
+1ff51bc47c99b2bebfb85272c511c94e
+
+# Meta
+name FactBkg
+num_sprites 1
+dims_image 239 72
+dims_frame 237 70
+dims_padded 239 72
+dims_grid 1 1
+padding 1
+origin 0 0
+framerate 0
+palettize 0
+# Anims
+FactBkg 0

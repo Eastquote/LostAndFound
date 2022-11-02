@@ -1,0 +1,2 @@
+origin 4 4
+framerate 60

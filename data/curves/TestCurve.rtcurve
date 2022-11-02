@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<curve extrapolateMode_Min="0" extrapolateMode_Max="0">
+	<keys>
+		<key time="0" val="0" leftTangent_x="-1" leftTangent_y="0" rightTangent_x="0.14788723" rightTangent_y="0.210833296" rightSectionMode="1" />
+		<key time="0.81528163" val="0.415047616" leftTangent_x="-0.531009316" leftTangent_y="0.504432559" rightTangent_x="0.0770657286" rightTangent_y="0" rightSectionMode="1" />
+	</keys>
+</curve>

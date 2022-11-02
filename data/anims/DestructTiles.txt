@@ -1,0 +1,16 @@
+17024940bda52c6405f6025a4b24feff
+
+# Meta
+name DestructTiles
+num_sprites 11
+dims_image 54 72
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 3 4
+padding 1
+origin 8 8
+framerate 60
+
+# Anims
+BlueBrickDissolve 0 1 2 3 4 5
+BlueBrickReturn 6 7 8 9 10

@@ -1,0 +1,15 @@
+7d00d875f5b54fd5dec7841d4b326f16
+
+# Meta
+name ItemGrenadeTank
+num_sprites 2
+dims_image 26 52
+dims_frame 24 24
+dims_padded 26 26
+dims_grid 1 2
+padding 1
+origin 12 16
+framerate 10
+
+# Anims
+Idle 0 1

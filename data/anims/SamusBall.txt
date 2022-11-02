@@ -1,0 +1,15 @@
+2b32cbe60fc41178dd2178c46da0562a
+
+# Meta
+name SamusBall
+num_sprites 4
+dims_image 34 72
+dims_frame 32 16
+dims_padded 34 18
+dims_grid 1 4
+padding 1
+origin 16 14
+framerate 30
+palettize 1
+# Anims
+SamusBall 0 1 2 3

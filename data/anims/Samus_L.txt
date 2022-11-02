@@ -1,0 +1,17 @@
+2aad3b40d284abe9989e9ed18447c61c
+
+# Meta
+name Samus_L
+num_sprites 5
+dims_image 68 54
+dims_frame 32 16
+dims_padded 34 18
+dims_grid 2 3
+padding 1
+origin 16 0
+framerate 20
+palettize 1
+# Anims
+SamusFall_L 0
+SamusIdle_L 1
+SamusRun_L 2 3 4

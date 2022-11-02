@@ -1,0 +1,16 @@
+2feef29c1c768535841b433649b78a73
+
+# Meta
+name Skybox
+num_sprites 2
+dims_image 362 532
+dims_frame 360 264
+dims_padded 362 266
+dims_grid 1 2
+padding 1
+origin 180 132
+framerate 10
+palettize 0
+# Anims
+Space1 0
+Space2 1

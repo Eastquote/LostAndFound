@@ -1,0 +1,68 @@
+---
+ENGINE TODO
+---
+
+BUGS:
+<for now, put bugs you find here alongside your name>
+
+URGENT:
+[T] package AnimPacker into an .exe (instead of a Python script)
+[D] switch over to Y-up coordinate space
+	[D] make sure positive rotation -> CCW rotation
+[D] Lerp/Ease/SmoothDamp/Spring/AccelTo/etc...
+    [D] ideally, each of these will have a task-based version that takes in a per-frame callback
+[D] geometric queries for line/polygon testing, as well as closest-point/SDF/etc...
+    [D] the end result would be to create the right tools to avoid even having to use a physics engine for basic platforming
+[D] MinMax
+    [D] also, simple map-range
+[D] Curve (with curve editor)
+[T] create Color4 class for use across all draw components (and screen clear)
+[T+D] support for scene render-to-texture (to allow pixel-perfect rescaling, as well as post-processing)
+	- specifically, fonts do not scale correctly when "zooming in" on pixel art
+[T+D] expose window viewport controls
+	- design + impl for controls for resizing the game content and placing it onto the screen
+	- do after render-to-texture
+[T] AudioSystem (sound, music, audio component)
+   
+NORMAL:
+[T] RNG helper functions (range random, gaussian random, disc/circle/line/box/chain/polygon random)
+    [T] ideally provide an object-based "RNG" object that wraps the STL mersenne twister random, and pass that into these
+    [T] also provide a "singleton instance" of the RNG object, and default to use it in static versions of the above random functions
+[T] Polygon helper generators (circle, box, N-gon)
+[T] Polygon::Transform(transform) helper function
+[D] Spline
+[D] Trajectory
+[D] Rotator
+[ ] time dilation that manages a stack of time dilations
+		- each has a duration
+		- support "infinite" scopeguarded handles, and one-shot fire and forget handles
+[D] input history/buffering on input objects
+[D] built-in input deadzoning support
+[T] PixelFont asset + implementation (using a simple spritesheet + offsets)
+    [T] text-wrapping (with teletyping support)
+        - probably as part of PixelFont
+    [T] needs a PixelTextComponent, as well
+
+NON-ESSENTIAL:
+[T] TaskFSM (likely a Squid::Tasks feature that will flow downstream eventually)
+[D] pathfinding integration (grid-based would be good, ideally integrating automatically in some way with TileMap data)
+[ ] finish writing PhysicsSystem (queries, bodies, shapes, joints)
+[ ] rename Box2d to BoxD (there will be no 3D boxes, so let's follow the same pattern as Transform, with Box + BoxD)
+[ ] ShapeComponent features
+    [ ] switch to vertexbuffer representation of shape
+    [ ] add vertex render data to Polygon
+        [ ] support for per-vertex UVs
+        [ ] support for per-vertex color
+	   [ ] texture-mapping in shape component
+    [ ] outline + fill color
+    [ ] outline thickness
+[ ] Point type (inherits from Vec2<T>)
+    [ ] helps force the programmer to think explicitly about what type their vector represents
+    [ ] Transform would no longer need TransformVector/TransformPoint to have different names
+[ ] basic pause menu (to make sure the idea works)
+[ ] basic save-load support
+[ ] add support for hand-authored anims via _meta.txt (to allow specific timings + frame reuse)
+[ ] add SQUID_NODISCARD where appropriate to functions throughout the engine
+[ ] implement support for "infinite" .tmx files
+[ ] implement support for "terrain" (.tsx tileset format)
+[ ] implement support loading + playback of animated tiles (.tsx tileset format)

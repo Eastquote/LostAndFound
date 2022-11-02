@@ -1,0 +1,14 @@
+e583eb0fc9599f1d883d8b017527af23
+
+# Meta
+name HudBkg
+num_sprites 1
+dims_image 258 34
+dims_frame 256 32
+dims_padded 258 34
+dims_grid 1 1
+padding 1
+framerate 30
+
+# Anims
+HudBkg 0

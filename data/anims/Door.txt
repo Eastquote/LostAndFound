@@ -1,0 +1,20 @@
+6a2785374b25ec3bbf55c4d83215cb92
+
+# Meta
+name Door
+num_sprites 56
+dims_image 264 250
+dims_frame 20 48
+dims_padded 22 50
+dims_grid 12 5
+padding 1
+origin 4 24
+framerate 20
+
+# Anims
+Blue 0 1 2 3 4 5 6 7 8 9 10 11 12
+BlueClosing 13 14 15 16 17 18 19 20 21 22 23 24 25
+BlueFlash 26 27
+Red 28 29 30 31 32 33 34 35 36 37 38 39 40
+RedClosing 41 42 43 44 45 46 47 48 49 50 51 52 53
+RedFlash 54 55

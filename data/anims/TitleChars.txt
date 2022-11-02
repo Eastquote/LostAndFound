@@ -1,0 +1,16 @@
+a767085540f0dcb98a17097cc3f61965
+
+# Meta
+name TitleChars
+num_sprites 24
+dims_image 224 260
+dims_frame 30 63
+dims_padded 32 65
+dims_grid 7 4
+padding 1
+origin 13 31
+framerate 15
+palettize 0
+# Anims
+Chars 0 1 2 3 4 5 6 7 8 9 10 11
+CharsShadow 12 13 14 15 16 17 18 19 20 21 22 23

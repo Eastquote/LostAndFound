@@ -1,0 +1,17 @@
+470600ce7e867d68f3568b661231e589
+
+# Meta
+name AimReticle
+num_sprites 14
+dims_image 200 200
+dims_frame 48 48
+dims_padded 50 50
+dims_grid 4 4
+padding 1
+origin 23 24
+framerate 20
+
+# Anims
+Appear 0 1 2 3 4 5
+Disappear 6 7 8 9 10 11
+Idle 12 13

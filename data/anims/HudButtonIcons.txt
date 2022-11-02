@@ -1,0 +1,15 @@
+6d5791a33874c704b6869fad20bb72ab
+
+# Meta
+name HudButtonIcons
+num_sprites 4
+dims_image 30 26
+dims_frame 13 11
+dims_padded 15 13
+dims_grid 2 2
+padding 1
+origin 0 0
+framerate 0
+
+# Anims
+HudButtonIcons 0 1 2 3

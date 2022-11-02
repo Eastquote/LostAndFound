@@ -1,0 +1,15 @@
+47cef1201b54fc95998ee7f796c5bb1b
+
+# Meta
+name ChargeEffect
+num_sprites 7
+dims_image 102 102
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 3 3
+padding 1
+origin 16 16
+framerate 10
+palettize 1
+# Anims
+Charged 0 1 2 3 4 5 6

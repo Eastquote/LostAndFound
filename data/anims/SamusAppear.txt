@@ -1,0 +1,15 @@
+64c780b2bed2fa024ad1a48fe4257b9f
+
+# Meta
+name SamusAppear
+num_sprites 1
+dims_image 34 42
+dims_frame 32 40
+dims_padded 34 42
+dims_grid 1 1
+padding 1
+origin 16 24
+framerate 10
+palettize 1
+# Anims
+SamusAppear 0

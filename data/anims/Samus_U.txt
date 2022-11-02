@@ -1,0 +1,21 @@
+5080605a313ec6e8184e5b65bcc11112
+
+# Meta
+name Samus_U
+num_sprites 9
+dims_image 102 78
+dims_frame 32 24
+dims_padded 34 26
+dims_grid 3 3
+padding 1
+origin 16 24
+framerate 10
+palettize 1
+# Anims
+SamusAimUp_U 0
+SamusFall_U 1
+SamusFireAir_U 2
+SamusFireUp_U 3
+SamusFire_U 4
+SamusIdle_U 5
+SamusRun_U 6 7 8

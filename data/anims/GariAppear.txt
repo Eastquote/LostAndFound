@@ -1,0 +1,15 @@
+ba20e2c51e0c608a20c05dfec4764344
+
+# Meta
+name GariAppear
+num_sprites 1
+dims_image 50 60
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 1 1
+padding 1
+origin 24 32
+framerate 10
+palettize 0
+# Anims
+GariAppear 0

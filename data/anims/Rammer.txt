@@ -1,0 +1,17 @@
+611fb162785a84dd728c36ed8e20d472
+
+# Meta
+name Rammer
+num_sprites 7
+dims_image 126 123
+dims_frame 40 39
+dims_padded 42 41
+dims_grid 3 3
+padding 1
+origin 18 21
+framerate 10
+palettize 0
+# Anims
+IdleAlert 0 1
+IdleSleep 2
+Ram 3 4 5 6

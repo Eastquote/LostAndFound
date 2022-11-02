@@ -1,0 +1,19 @@
+231c05f2d1ae89871d1a8e2f194b751e
+
+# Meta
+name Debris
+num_sprites 20
+dims_image 40 50
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 4 5
+padding 1
+origin 4 4
+framerate 60
+palettize 1
+# Anims
+DebrisCrawler 0 1 2 3
+DebrisCruiser 4 5 6 7
+DebrisDropper 8 9 10 11
+DebrisPiper 12 13 14 15
+DebrisSwooper 16 17 18 19

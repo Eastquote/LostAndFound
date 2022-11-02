@@ -1,0 +1,17 @@
+f24e92e7dcb59234c4e9c99f74b73268
+
+# Meta
+name LaserBeam
+num_sprites 22
+dims_image 40 45
+dims_frame 6 7
+dims_padded 8 9
+dims_grid 5 5
+padding 1
+origin 3 3
+framerate 5
+
+# Anims
+Appear 0 1 2 3 4 5 6 7
+Fade 8 9 10 11 12 13 14 15
+Idle 16 17 18 19 20 21

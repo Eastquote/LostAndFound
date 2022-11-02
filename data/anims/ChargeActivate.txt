@@ -1,0 +1,16 @@
+30505cd73d34a2e52f64a600b5d1fdc5
+
+# Meta
+name ChargeActivate
+num_sprites 14
+dims_image 200 200
+dims_frame 48 48
+dims_padded 50 50
+dims_grid 4 4
+padding 1
+origin 24 24
+framerate 20
+palettize 0
+# Anims
+ChargeActivate 0 1 2 3 4 5 6
+Discharge 7 8 9 10 11 12 13

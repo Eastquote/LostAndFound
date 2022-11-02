@@ -1,0 +1,18 @@
+523d9634e0c3def1caeaa7ea706f40b4
+
+# Meta
+name Crawler
+num_sprites 24
+dims_image 170 170
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 5 5
+padding 1
+origin 16 16
+framerate 15
+palettize 0
+# Anims
+Hori 0 1 2 3 4 5
+HoriLit 6 7 8 9 10 11
+Vert 12 13 14 15 16 17
+VertLit 18 19 20 21 22 23

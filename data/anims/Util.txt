@@ -1,0 +1,14 @@
+11d249dc82b3d440d97b67841a2fff58
+
+# Meta
+name Util
+num_sprites 1
+dims_image 6 6
+dims_frame 4 4
+dims_padded 6 6
+dims_grid 1 1
+padding 1
+framerate 30
+
+# Anims
+Blank 0

@@ -1,0 +1,15 @@
+c1aa039167d48616a6b6b7023f3304c7
+
+# Meta
+name ItemMissileTank
+num_sprites 2
+dims_image 26 52
+dims_frame 24 24
+dims_padded 26 26
+dims_grid 1 2
+padding 1
+origin 12 16
+framerate 10
+
+# Anims
+Idle 0 1

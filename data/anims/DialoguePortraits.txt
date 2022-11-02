@@ -1,0 +1,16 @@
+5c7c5faa99ac4886a9e3ef14bd62c2dc
+
+# Meta
+name DialoguePortraits
+num_sprites 4
+dims_image 68 68
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 2 2
+padding 1
+origin 0 0
+framerate 6
+palettize 0
+# Anims
+Anna 0 1
+Gari 2 3

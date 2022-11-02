@@ -1,0 +1,16 @@
+ee559f94ce0c6874fa034fc97ad929ad
+
+# Meta
+name GariAimDown
+num_sprites 2
+dims_image 50 120
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 1 2
+padding 1
+origin 24 32
+framerate 10
+palettize 0
+# Anims
+GariAimDown 0
+GariFireDown 1

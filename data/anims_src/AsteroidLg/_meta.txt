@@ -1,0 +1,2 @@
+origin 56 31
+framerate 20

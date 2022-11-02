@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="middleware">
+      <UniqueIdentifier>{d68e0a8b-ea55-4fda-8069-0ed83de4383e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\box2d">
+      <UniqueIdentifier>{19d4ded5-8cb6-4625-8f58-95653d052f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\clipper">
+      <UniqueIdentifier>{fa50abd2-7025-4c5b-b6be-83be613b03bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SquidTasks">
+      <UniqueIdentifier>{e597589c-e91d-4373-993f-35c7acc288d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\box2d\box2d">
+      <UniqueIdentifier>{efd36bcc-128a-492b-b0c0-ced7e164c37b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\pugixml">
+      <UniqueIdentifier>{8a6bccd6-c44d-4b13-b60c-cadca9719837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\poly2tri">
+      <UniqueIdentifier>{f11bf9f2-4117-4720-bf68-c2c66da58407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML">
+      <UniqueIdentifier>{0f438032-cbca-4643-b9ea-5765e72a499c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\poly2tri\common">
+      <UniqueIdentifier>{446b5dc6-520b-4f73-8da4-75e9c8f516ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\poly2tri\sweep">
+      <UniqueIdentifier>{0e3b282e-7e12-4e35-9d0b-202731a676a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML\Audio">
+      <UniqueIdentifier>{1c9da14d-b838-425b-baec-dd8f4e876c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML\Graphics">
+      <UniqueIdentifier>{67fbc0ce-d1e0-4fcd-8dc3-00d109908515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML\Network">
+      <UniqueIdentifier>{297243f2-50c4-4a62-8bd5-088b2d6f4b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML\System">
+      <UniqueIdentifier>{01cda5ac-5f9f-49d1-ab2b-a6e2c799bffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SFML\Window">
+      <UniqueIdentifier>{830df8c1-546b-4adb-89ef-d6a8aba8392e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine">
+      <UniqueIdentifier>{b8864858-275b-4948-b1f1-7719b14cae18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Components">
+      <UniqueIdentifier>{3666dac7-8c03-45cb-9ae2-bf89f271c4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DTest">
+      <UniqueIdentifier>{4f880f3c-07a5-4b8a-a7c6-8911e2a8794a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DTest\Yuzu">
+      <UniqueIdentifier>{ad23086d-1caa-4360-a523-1c85ae82b43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DTest\Fish">
+      <UniqueIdentifier>{1f7a0a13-67ac-4e00-a4b4-7f5465b3b0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\imgui">
+      <UniqueIdentifier>{52475fea-0247-4233-8154-1f8271739f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\ImGuiFileDialog">
+      <UniqueIdentifier>{04eec0c1-3167-497f-b712-67eeeb05b363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\ImGuiFileDialog\dirent">
+      <UniqueIdentifier>{06574937-8a03-4a75-966e-ebb286836171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine\Editor">
+      <UniqueIdentifier>{177f04a7-d72d-421f-8f9a-dba46643c787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SquidTasks\Private">
+      <UniqueIdentifier>{34f84f42-7eba-4435-8751-9f73ca4a07ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="middleware\SquidTasks\Private\tl">
+      <UniqueIdentifier>{4d449f20-0a48-4c3b-af1b-ef9b3b50e2fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_world_callbacks.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\box2d.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_api.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_block_allocator.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_body.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_broad_phase.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_chain_shape.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_circle_shape.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_collision.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_common.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_contact.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_contact_manager.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_distance.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_distance_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_draw.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_dynamic_tree.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_edge_shape.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_fixture.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_friction_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_gear_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_growable_stack.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_math.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_motor_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_mouse_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_polygon_shape.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_prismatic_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_pulley_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_revolute_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_rope.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_settings.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_shape.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_stack_allocator.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_time_of_impact.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_time_step.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_timer.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_types.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_weld_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_wheel_joint.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\box2d\include\box2d\b2_world.h">
+      <Filter>middleware\box2d\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\clipper\include\clipper.hpp">
+      <Filter>middleware\clipper</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\poly2tri.h">
+      <Filter>middleware\poly2tri</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\common\shapes.h">
+      <Filter>middleware\poly2tri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\common\utils.h">
+      <Filter>middleware\poly2tri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\sweep\advancing_front.h">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\sweep\cdt.h">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\sweep\sweep.h">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\poly2tri\include\sweep\sweep_context.h">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\pugixml\include\pugiconfig.hpp">
+      <Filter>middleware\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\pugixml\include\pugixml.hpp">
+      <Filter>middleware\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Config.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\GpuPreference.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Main.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\OpenGL.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window.hpp">
+      <Filter>middleware\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Export.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\InputSoundFile.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Listener.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Music.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\OutputSoundFile.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Sound.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundBuffer.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundBufferRecorder.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileFactory.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileReader.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileWriter.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundRecorder.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundSource.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundStream.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\AlResource.hpp">
+      <Filter>middleware\SFML\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\BlendMode.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\CircleShape.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Color.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\ConvexShape.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Drawable.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Export.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Font.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Glsl.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Glyph.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Image.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\PrimitiveType.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Rect.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RectangleShape.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderStates.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderTarget.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderTexture.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderWindow.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Shader.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Shape.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Sprite.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Text.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Texture.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Transform.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Transformable.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Vertex.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\VertexArray.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\VertexBuffer.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\View.hpp">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\IpAddress.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Packet.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Socket.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\SocketHandle.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\SocketSelector.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\TcpListener.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\TcpSocket.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\UdpSocket.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Export.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Ftp.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Http.hpp">
+      <Filter>middleware\SFML\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Mutex.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\NativeActivity.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\NonCopyable.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Sleep.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\String.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Thread.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\ThreadLocal.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\ThreadLocalPtr.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Time.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Utf.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Vector2.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Vector3.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Clock.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Err.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Export.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\FileInputStream.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\InputStream.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\Lock.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\System\MemoryInputStream.hpp">
+      <Filter>middleware\SFML\System</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Context.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\ContextSettings.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Cursor.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Event.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Export.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\GlResource.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Joystick.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Keyboard.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Mouse.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Sensor.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Touch.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\VideoMode.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Vulkan.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Window.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowBase.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowHandle.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowStyle.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Clipboard.hpp">
+      <Filter>middleware\SFML\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\TaskManager.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\TasksConfig.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\TasksCppFeatures.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\Tokens.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\FunctionGuard.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\Task.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\TaskFence.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEnums.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameLoop.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Actor.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Anim.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\AssetCache.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Box.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Delegate.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Game.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\GameWindow.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Guard.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\InputSystem.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Object.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\PhysicsSystem.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Polygon.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\SpriteSheet.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\StringUtils.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Texture.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\TileMap.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Transform.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Vec2.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\DrawComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\SceneComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\ShapeComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\SpriteComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\TilesComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\TextComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Font.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Time.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MathCore.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MathDynamics.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MathEasings.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MathGeometry.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MinMax.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\DebugDrawSystem.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\HistoryBuffer.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\MathRandom.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Trajectory.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\RenderTexture.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Character.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imgui_internal.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imstb_rectpack.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imstb_textedit.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imstb_truetype.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imconfig.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\imgui\include\imgui.h">
+      <Filter>middleware\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Projectile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProjectileManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameActor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SensorManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\SensorComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Curve.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\ImGuiFileDialog\include\ImGuiFileDialog.h">
+      <Filter>middleware\ImGuiFileDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\ImGuiFileDialog\include\ImGuiFileDialogConfig.h">
+      <Filter>middleware\ImGuiFileDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\ImGuiFileDialog\include\dirent\dirent.h">
+      <Filter>middleware\ImGuiFileDialog\dirent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Editor\ImguiIntegration.h">
+      <Filter>src\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Editor\ImguiCurveWidget.h">
+      <Filter>src\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Editor\DebugTimeControls.h">
+      <Filter>src\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Editor\EditorMode.h">
+      <Filter>src\Engine\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\CollisionWorld.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Components\ColliderComponent.h">
+      <Filter>src\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\Shader.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\PaletteSet.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bomb.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CameraManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Creature.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CreatureSpawner.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DestroyedTile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Door.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DropManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Effect.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hud.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lava.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Particle.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ParticleManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ParticleSpawner.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pickup.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PlayerStatus.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameWorld.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\EaseTo.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\TaskFSM.h">
+      <Filter>middleware\SquidTasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FunFactsWidget.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MenuItem.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PauseMenu.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SavePoint.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SquirrelNoise5.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine\LayerManager.h">
+      <Filter>src\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LightElement.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AimReticle.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AimReticleManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Dialogue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Light.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Suit.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Trigger.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Algorithms.h" />
+    <ClInclude Include="src\Creatures\Ship.h" />
+    <ClInclude Include="src\Creatures\Pirate.h" />
+    <ClInclude Include="src\Creatures\Turret.h" />
+    <ClInclude Include="src\Creatures\Blobber.h" />
+    <ClInclude Include="src\Creatures\Rammer.h" />
+    <ClInclude Include="src\Creatures\Charger.h" />
+    <ClInclude Include="src\Creatures\Monopod.h" />
+    <ClInclude Include="src\Creatures\Dropper.h" />
+    <ClInclude Include="src\Creatures\Sentry.h" />
+    <ClInclude Include="src\Creatures\Laser.h" />
+    <ClInclude Include="src\Creatures\Crawler.h" />
+    <ClInclude Include="src\Creatures\Piper.h" />
+    <ClInclude Include="src\Creatures\Swooper.h" />
+    <ClInclude Include="src\Creatures\Cruiser.h" />
+    <ClInclude Include="src\Projectiles\HomingMissile.h" />
+    <ClInclude Include="src\Projectiles\WaveBeam.h" />
+    <ClInclude Include="src\Projectiles\Grenade.h" />
+    <ClInclude Include="src\Projectiles\GrenadeDefs.h" />
+    <ClInclude Include="src\Projectiles\HomingMissileDefs.h" />
+    <ClInclude Include="src\Projectiles\WaveBeamDefs.h" />
+    <ClInclude Include="src\MenuItemDefs.h" />
+    <ClInclude Include="src\ParticleSpawnerDefs.h" />
+    <ClInclude Include="src\PickupDefs.h" />
+    <ClInclude Include="src\Cardinals.h" />
+    <ClInclude Include="src\DamageInfo.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskCppExtPrivate.h">
+      <Filter>middleware\SquidTasks\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskFSMPrivate.h">
+      <Filter>middleware\SquidTasks\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskPrivate.h">
+      <Filter>middleware\SquidTasks\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\SquidTasks\include\Private\tl\optional.hpp">
+      <Filter>middleware\SquidTasks\Private\tl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsteroidField.h" />
+    <ClInclude Include="src\TextDefs.h" />
+    <ClInclude Include="src\TitleChar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="middleware\clipper\include\clipper.cpp">
+      <Filter>middleware\clipper</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\poly2tri\include\common\shapes.cc">
+      <Filter>middleware\poly2tri\common</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\poly2tri\include\sweep\advancing_front.cc">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\poly2tri\include\sweep\cdt.cc">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\poly2tri\include\sweep\sweep.cc">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\poly2tri\include\sweep\sweep_context.cc">
+      <Filter>middleware\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\pugixml\include\pugixml.cpp">
+      <Filter>middleware\pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameLoop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Anim.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Game.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\GameWindow.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\InputSystem.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Object.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\PhysicsSystem.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Polygon.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\SpriteSheet.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Texture.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\TileMap.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Transform.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Vec2.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\SceneComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\ShapeComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\SpriteComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\TilesComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Font.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\TextComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Time.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\DebugDrawSystem.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\MathGeometry.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\MathEasings.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Character.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Actor.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\RenderTexture.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\imgui\include\imgui_tables.cpp">
+      <Filter>middleware\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\imgui\include\imgui_widgets.cpp">
+      <Filter>middleware\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\imgui\include\imgui.cpp">
+      <Filter>middleware\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\imgui\include\imgui_draw.cpp">
+      <Filter>middleware\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Projectile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProjectileManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameActor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SensorManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\SensorComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Curve.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\ImGuiFileDialog\include\ImGuiFileDialog.cpp">
+      <Filter>middleware\ImGuiFileDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Effect.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameWorld.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creature.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CreatureSpawner.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Editor\ImguiIntegration.cpp">
+      <Filter>src\Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Editor\DebugTimeControls.cpp">
+      <Filter>src\Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Editor\EditorMode.cpp">
+      <Filter>src\Engine\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hud.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Particle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParticleManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParticleSpawner.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Door.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CameraManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\CollisionWorld.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\ColliderComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pickup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DropManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bomb.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AudioManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DestroyedTile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lava.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Shader.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\PaletteSet.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerStatus.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SavePoint.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MenuItem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PauseMenu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FunFactsWidget.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trigger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Dialogue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Components\DrawComponent.cpp">
+      <Filter>src\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine\LayerManager.cpp">
+      <Filter>src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Suit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AimReticle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AimReticleManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LightElement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Light.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Ship.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Pirate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Turret.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Blobber.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Rammer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Charger.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Monopod.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Dropper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Sentry.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Laser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Crawler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Piper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Swooper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Creatures\Cruiser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Projectiles\HomingMissile.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Projectiles\WaveBeam.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Projectiles\Grenade.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TitleChar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsteroidField.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="middleware\SFML\include\SFML\Audio\SoundFileFactory.inl">
+      <Filter>middleware\SFML\Audio</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\Graphics\Glsl.inl">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\Graphics\Rect.inl">
+      <Filter>middleware\SFML\Graphics</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\String.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\Thread.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\ThreadLocalPtr.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\Utf.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\Vector2.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+    <None Include="middleware\SFML\include\SFML\System\Vector3.inl">
+      <Filter>middleware\SFML\System</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ENGINE.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

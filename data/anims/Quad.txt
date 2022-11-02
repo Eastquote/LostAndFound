@@ -1,0 +1,15 @@
+a13f48dbd896c3811ef63eb706550551
+
+# Meta
+name Quad
+num_sprites 1
+dims_image 12 12
+dims_frame 10 10
+dims_padded 12 12
+dims_grid 1 1
+padding 1
+origin 0 0
+framerate 0
+palettize 1
+# Anims
+Quad 0

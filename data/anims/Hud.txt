@@ -1,0 +1,15 @@
+8e0b779fa996804f88f7838606b8647c
+
+# Meta
+name Hud
+num_sprites 10
+dims_image 30 40
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 3 4
+padding 1
+origin 0 0
+framerate 0
+
+# Anims
+Text 0 1 2 3 4 5 6 7 8 9

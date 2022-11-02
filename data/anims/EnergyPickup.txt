@@ -1,0 +1,16 @@
+70b4d68167db34a4bcacdac1ff6453ab
+
+# Meta
+name EnergyPickup
+num_sprites 20
+dims_image 72 90
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 4 5
+padding 1
+origin 8 8
+framerate 15
+
+# Anims
+Large 0 1 2 3 4 5 6 7 8 9 10 11
+Small 12 13 14 15 16 17 18 19

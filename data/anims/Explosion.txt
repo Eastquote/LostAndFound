@@ -1,0 +1,18 @@
+f0dcbe2d845ee5fe0d8dee80f29633c2
+
+# Meta
+name Explosion
+num_sprites 20
+dims_image 136 170
+dims_frame 32 32
+dims_padded 34 34
+dims_grid 4 5
+padding 1
+origin 16 16
+framerate 20
+
+# Anims
+BeamCharge 0 1 2 3
+BeamChargeLg 4 5 6 7 8 9
+Explosion 10 11 12
+ExplosionBomb 13 14 15 16 17 18 19

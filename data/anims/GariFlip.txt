@@ -1,0 +1,15 @@
+a43731e682bf98ed8f4aa2a6e354bffe
+
+# Meta
+name GariFlip
+num_sprites 4
+dims_image 100 120
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 2 2
+padding 1
+origin 24 32
+framerate 30
+palettize 0
+# Anims
+GariFlip 0 1 2 3

@@ -1,0 +1,15 @@
+94c1108e53e68edbf69a019f89cb6124
+
+# Meta
+name ShotMissile
+num_sprites 8
+dims_image 44 48
+dims_frame 20 10
+dims_padded 22 12
+dims_grid 2 4
+padding 1
+origin 18 5
+framerate 60
+
+# Anims
+Idle 0 1 2 3 4 5 6 7

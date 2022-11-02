@@ -1,0 +1,18 @@
+e04a1047036a2e7c66f4197914ca2e27
+
+# Meta
+name Charger
+num_sprites 8
+dims_image 92 72
+dims_frame 44 16
+dims_padded 46 18
+dims_grid 2 4
+padding 1
+origin 21 12
+framerate 10
+palettize 0
+# Anims
+Appear 0 1 2
+Disappear 3 4 5
+Idle 6
+IdleSleeping 7

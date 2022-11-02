@@ -1,0 +1,19 @@
+43ff868fe72da4f6bf8ace0cd5cda391
+
+# Meta
+name Monopod
+num_sprites 7
+dims_image 108 102
+dims_frame 34 32
+dims_padded 36 34
+dims_grid 3 3
+padding 1
+origin 16 16
+framerate 10
+palettize 0
+# Anims
+BodyIdleFallen 0
+BodyIdleOpen 1 2
+BodyIdleStanding 3
+LegIdleStanding 4
+LegRunning 5 6

@@ -1,0 +1,16 @@
+bb56bf8359b6d152e05628d3d5853fef
+
+# Meta
+name LightLarge
+num_sprites 2
+dims_image 123 246
+dims_frame 121 121
+dims_padded 123 123
+dims_grid 1 2
+padding 1
+origin 60 60
+framerate 10
+palettize 0
+# Anims
+Core 0
+Penumbra 1

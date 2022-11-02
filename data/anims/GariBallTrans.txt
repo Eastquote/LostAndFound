@@ -1,0 +1,15 @@
+befd2d5d115c31ec5d322f68cb19911f
+
+# Meta
+name GariBallTrans
+num_sprites 1
+dims_image 50 60
+dims_frame 48 58
+dims_padded 50 60
+dims_grid 1 1
+padding 1
+origin 24 32
+framerate 15
+palettize 0
+# Anims
+GariBallTrans 0

@@ -1,0 +1,15 @@
+fb7b56c7f6bdc8839cd10786a45d0f47
+
+# Meta
+name Square
+num_sprites 1
+dims_image 12 12
+dims_frame 10 10
+dims_padded 12 12
+dims_grid 1 1
+padding 1
+origin 0 0
+framerate 10
+
+# Anims
+10px 0

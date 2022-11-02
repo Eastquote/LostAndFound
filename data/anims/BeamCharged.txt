@@ -1,0 +1,15 @@
+cc85d84e90082185cf14d5f7001a2aea
+
+# Meta
+name BeamCharged
+num_sprites 1
+dims_image 14 14
+dims_frame 12 12
+dims_padded 14 14
+dims_grid 1 1
+padding 1
+origin 5 6
+framerate 10
+
+# Anims
+Shot 0

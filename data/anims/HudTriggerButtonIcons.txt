@@ -1,0 +1,15 @@
+d2743abe5fdd4155f3f7d572bc7d5164
+
+# Meta
+name HudTriggerButtonIcons
+num_sprites 2
+dims_image 23 26
+dims_frame 21 11
+dims_padded 23 13
+dims_grid 1 2
+padding 1
+origin 0 0
+framerate 0
+
+# Anims
+HudTriggerButtonIcons 0 1

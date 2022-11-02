@@ -1,0 +1,3 @@
+origin 180 132
+framerate 10
+palettize 0

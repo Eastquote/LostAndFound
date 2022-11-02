@@ -1,0 +1,251 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tilemaps/GO_worldMap01.tmx",
+    "automapping.whileDrawing": true,
+    "expandedProjectPaths": [
+        "tilesets"
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/Users/mikea/source/repos/Retroid/tilesets/Brinstar_sprites.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/mikea/source/repos/Retroid/tilesets/autoTiles.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/mikea/source/repos/Retroid/tilesets/graveyardOrbitTiles.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/mikea/source/repos/RetroidNew/data/tilesets/Brinstar_sprites.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "GO_bossLabCrash.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 4709,
+                "y": 1790
+            }
+        },
+        "tilemaps/Auto_Tile_Test.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 499.5,
+                "y": 300.75
+            }
+        },
+        "tilemaps/Brinstar.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 928,
+                "y": 799.6666666666667
+            }
+        },
+        "tilemaps/Brinstar_MultiRoom.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 4000,
+                "y": 3199.75
+            }
+        },
+        "tilemaps/Brinstar_MultiRoom_Testbed.tmx": {
+            "scale": 0.125,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 2408,
+                "y": 2468
+            }
+        },
+        "tilemaps/Brinstar_kids.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 926.6666666666667,
+                "y": 799.3333333333334
+            }
+        },
+        "tilemaps/GO_01.tmx": {
+            "scale": 1,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 1599.5,
+                "y": 1462
+            }
+        },
+        "tilemaps/GO_02.tmx": {
+            "scale": 2,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 777.5,
+                "y": 261.75
+            }
+        },
+        "tilemaps/GO_02_kids.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 654.6666666666666,
+                "y": 238.3333333333333
+            }
+        },
+        "tilemaps/GO_bossLab.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 4382,
+                "y": 1905
+            }
+        },
+        "tilemaps/GO_suitLab.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 8,
+            "viewCenter": {
+                "x": 3944,
+                "y": 1889
+            }
+        },
+        "tilemaps/GO_weaponLab.tmx": {
+            "scale": 1,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 2391.5,
+                "y": 1462
+            }
+        },
+        "tilemaps/GO_worldMap01.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 3199.333333333333,
+                "y": 3200
+            }
+        },
+        "tilemaps/Yuzu.tmx": {
+            "scale": 0.38178124999999996,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 802.8157485471066,
+                "y": 800.1964475730539
+            }
+        },
+        "tilemaps/autoTiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "tilemaps/graveyardOrbitTiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 4,
+            "scaleInEditor": 2
+        },
+        "tilemaps/ship_rules.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 511.66666666666663,
+                "y": 768
+            }
+        },
+        "tilemaps/ship_rules.tmx#Brinstar_sprites": {
+            "dynamicWrapping": false
+        },
+        "tilemaps/ship_rules2.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 276.6666666666667,
+                "y": 187.33333333333331
+            }
+        },
+        "tilemaps/ship_rulesSimple.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 228.5,
+                "y": 294
+            }
+        },
+        "tilesets/Brinstar.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 8,
+                "y": 173
+            }
+        },
+        "tilesets/Brinstar.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/Brinstar_sprites.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 2,
+            "scaleInEditor": 3
+        },
+        "tilesets/autoTiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.75
+        },
+        "tilesets/graveyardOrbitTiles.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "tilesets/graveyardOrbitTiles_lit.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/mikea/source/repos/Retroid/data/tilesets",
+    "last.imagePath": "C:/Users/mikea/source/repos/Retroid/data/tilesets",
+    "last.objectTemplatePath": "C:/Users/mikea/source/repos/Retroid/data/tilemaps",
+    "map.fixedSize": true,
+    "map.height": 64,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 64,
+    "openFiles": [
+        "tilemaps/GO_01.tmx",
+        "tilemaps/ship_rules.tmx",
+        "tilemaps/GO_weaponLab.tmx",
+        "tilemaps/GO_worldMap01.tmx"
+    ],
+    "project": "Metroid.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "tilemaps/GO_01.tmx",
+        "tilemaps/ship_rules.tmx",
+        "tilemaps/GO_weaponLab.tmx",
+        "tilemaps/GO_worldMap01.tmx",
+        "tilemaps/Brinstar_MultiRoom_Testbed.tmx",
+        "tilemaps/Brinstar_kids.tmx",
+        "tilemaps/Brinstar_MultiRoom.tmx",
+        "tilemaps/GO_bossLab.tmx",
+        "tilesets/graveyardOrbitTiles_lit.tsx",
+        "tilesets/graveyardOrbitTiles.tsx",
+        "tilemaps/GO_02_kids.tmx",
+        "tilesets/Brinstar_sprites.tsx"
+    ],
+    "resizeMap.removeObjects": false,
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.transparentColor": "#000000",
+    "tileset.type": 0,
+    "tileset.useTransparentColor": true
+}

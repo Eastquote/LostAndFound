@@ -1,0 +1,17 @@
+7137b58172b3035d0f889bf3391c8951
+
+# Meta
+name DoorCenter
+num_sprites 3
+dims_image 80 100
+dims_frame 38 48
+dims_padded 40 50
+dims_grid 2 2
+padding 1
+origin 19 24
+framerate 10
+
+# Anims
+Blue 0
+BlueLit 1
+Red 2

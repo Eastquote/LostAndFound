@@ -1,0 +1,15 @@
+970bc9dd418c8f79eee33cd184aa40c5
+
+# Meta
+name PickupsSmall
+num_sprites 2
+dims_image 10 20
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 1 2
+padding 1
+origin 4 4
+framerate 30
+
+# Anims
+Energy 0 1

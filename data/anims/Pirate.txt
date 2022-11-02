@@ -1,0 +1,18 @@
+34cd16de07d7ff84c0e3e8d087b122e2
+
+# Meta
+name Pirate
+num_sprites 29
+dims_image 310 372
+dims_frame 60 60
+dims_padded 62 62
+dims_grid 5 6
+padding 1
+origin 32 40
+framerate 5
+palettize 0
+# Anims
+Idle 0 1 2 3 4 5 6 7
+Jump 8
+Run 9 10 11 12 13 14 15 16
+Teleport 17 18 19 20 21 22 23 24 25 26 27 28

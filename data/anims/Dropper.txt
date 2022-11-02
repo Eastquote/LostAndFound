@@ -1,0 +1,16 @@
+cbd856eef58ed58e90dea1b0deb55b54
+
+# Meta
+name Dropper
+num_sprites 4
+dims_image 54 54
+dims_frame 25 25
+dims_padded 27 27
+dims_grid 2 2
+padding 1
+origin 12 13
+framerate 10
+palettize 0
+# Anims
+Idle 0 1 2
+IdleLit 3

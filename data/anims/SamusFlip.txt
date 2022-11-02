@@ -1,0 +1,15 @@
+c1585b59ed381998a83dcad3c3662810
+
+# Meta
+name SamusFlip
+num_sprites 4
+dims_image 68 52
+dims_frame 32 24
+dims_padded 34 26
+dims_grid 2 2
+padding 1
+origin 16 16
+framerate 30
+palettize 1
+# Anims
+SamusFlip 0 1 2 3

@@ -1,0 +1,15 @@
+e2df7c632179ed715fe06f0318d7ca4a
+
+# Meta
+name SuperMissile
+num_sprites 1
+dims_image 18 18
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 1 1
+padding 1
+origin 8 8
+framerate 60
+
+# Anims
+Normal 0

@@ -1,0 +1,18 @@
+3bcf224ab1d9bd6dc3e2918d3ad7a79d
+
+# Meta
+name ShipDoor
+num_sprites 22
+dims_image 66 132
+dims_frame 64 4
+dims_padded 66 6
+dims_grid 1 22
+padding 1
+origin 32 0
+framerate 10
+palettize 0
+# Anims
+Closed 0
+Closing 1 2 3 4 5 6 7 8 9 10
+Open 11
+Opening 12 13 14 15 16 17 18 19 20 21

@@ -1,0 +1,16 @@
+eb400234387344d2a6f3c46de47e9d97
+
+# Meta
+name Effects
+num_sprites 2
+dims_image 10 20
+dims_frame 8 8
+dims_padded 10 10
+dims_grid 1 2
+padding 1
+origin 4 4
+framerate 60
+
+# Anims
+IceBeamPlayer 0
+PinkBox 1

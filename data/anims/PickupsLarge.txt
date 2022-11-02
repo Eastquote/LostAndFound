@@ -1,0 +1,15 @@
+aafce1f582a45df3a22465c0c3be3583
+
+# Meta
+name PickupsLarge
+num_sprites 11
+dims_image 54 72
+dims_frame 16 16
+dims_padded 18 18
+dims_grid 3 4
+padding 1
+origin 8 8
+framerate 30
+
+# Anims
+Items 0 1 2 3 4 5 6 7 8 9 10

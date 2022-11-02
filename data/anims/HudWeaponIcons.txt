@@ -1,0 +1,21 @@
+2fed676a83144aa3209eedd304d6fb0b
+
+# Meta
+name HudWeaponIcons
+num_sprites 15
+dims_image 78 100
+dims_frame 24 18
+dims_padded 26 20
+dims_grid 3 5
+padding 1
+origin 1 4
+framerate 0
+palettize 0
+
+# Anims
+Weapon2Icons 0
+Weapon2IconsDis 1
+Weapon2IconsSel 2
+WeaponIcons 3 4 5 6
+WeaponIconsDis 7 8 9 10
+WeaponIconsSel 11 12 13 14

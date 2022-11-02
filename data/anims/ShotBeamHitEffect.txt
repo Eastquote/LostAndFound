@@ -1,0 +1,15 @@
+1020b9d1741eeebc73df5ddfaa58e49a
+
+# Meta
+name ShotBeamHitEffect
+num_sprites 6
+dims_image 24 36
+dims_frame 10 10
+dims_padded 12 12
+dims_grid 2 3
+padding 1
+origin 5 5
+framerate 30
+
+# Anims
+Idle 0 1 2 3 4 5

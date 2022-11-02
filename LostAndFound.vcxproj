@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{37ec92ef-0a3b-4e28-8673-0816639edee8}</ProjectGuid>
+    <RootNamespace>LostAndFound</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SQUID_HAS_AWAIT_STRICT</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;middleware/box2d/include;middleware/clipper/include;middleware/poly2tri/include;middleware/pugixml/include;middleware/SFML/include;middleware/SquidTasks/include;middleware/imgui/include;middleware/ImGuiFileDialog/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/await:strict %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>middleware/box2d/lib/Debug;middleware/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>box2d.lib;opengl32.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SQUID_HAS_AWAIT_STRICT</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;middleware/box2d/include;middleware/clipper/include;middleware/poly2tri/include;middleware/pugixml/include;middleware/SFML/include;middleware/SquidTasks/include;middleware/imgui/include;middleware/ImGuiFileDialog/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/await:strict %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>middleware/box2d/lib/Release;middleware/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>box2d.lib;opengl32.lib;sfml-audio.lib;sfml-graphics.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SQUID_HAS_AWAIT_STRICT</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;middleware/box2d/include;middleware/clipper/include;middleware/poly2tri/include;middleware/pugixml/include;middleware/SFML/include;middleware/SquidTasks/include;middleware/imgui/include;middleware/ImGuiFileDialog/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/await:strict %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>middleware/box2d/lib/Debug;middleware/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>box2d.lib;opengl32.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SQUID_HAS_AWAIT_STRICT</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;middleware/box2d/include;middleware/clipper/include;middleware/poly2tri/include;middleware/pugixml/include;middleware/SFML/include;middleware/SquidTasks/include;middleware/imgui/include;middleware/ImGuiFileDialog/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/await:strict %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>middleware/box2d/lib/Release;middleware/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>box2d.lib;opengl32.lib;sfml-audio.lib;sfml-graphics.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskCppExtPrivate.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskFSMPrivate.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Private\TaskPrivate.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Private\tl\optional.hpp" />
+    <ClInclude Include="src\AsteroidField.h" />
+    <ClInclude Include="src\Cardinals.h" />
+    <ClInclude Include="src\Creatures\Blobber.h" />
+    <ClInclude Include="src\Creatures\Charger.h" />
+    <ClInclude Include="src\Creatures\Crawler.h" />
+    <ClInclude Include="src\Creatures\Cruiser.h" />
+    <ClInclude Include="src\Creatures\Dropper.h" />
+    <ClInclude Include="src\Creatures\Laser.h" />
+    <ClInclude Include="src\Creatures\Monopod.h" />
+    <ClInclude Include="src\Creatures\Piper.h" />
+    <ClInclude Include="src\Creatures\Pirate.h" />
+    <ClInclude Include="src\Creatures\Rammer.h" />
+    <ClInclude Include="src\Creatures\Sentry.h" />
+    <ClInclude Include="src\Creatures\Ship.h" />
+    <ClInclude Include="src\Algorithms.h" />
+    <ClInclude Include="src\Creatures\Swooper.h" />
+    <ClInclude Include="src\Creatures\Turret.h" />
+    <ClInclude Include="src\DamageInfo.h" />
+    <ClInclude Include="src\Light.h" />
+    <ClInclude Include="src\LightElement.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_api.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_block_allocator.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_body.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_broad_phase.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_chain_shape.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_circle_shape.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_collision.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_common.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_contact.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_contact_manager.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_distance.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_distance_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_draw.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_dynamic_tree.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_edge_shape.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_fixture.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_friction_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_gear_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_growable_stack.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_math.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_motor_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_mouse_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_polygon_shape.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_prismatic_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_pulley_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_revolute_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_rope.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_settings.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_shape.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_stack_allocator.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_timer.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_time_of_impact.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_time_step.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_types.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_weld_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_wheel_joint.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_world.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\b2_world_callbacks.h" />
+    <ClInclude Include="middleware\box2d\include\box2d\box2d.h" />
+    <ClInclude Include="middleware\clipper\include\clipper.hpp" />
+    <ClInclude Include="middleware\ImGuiFileDialog\include\dirent\dirent.h" />
+    <ClInclude Include="middleware\ImGuiFileDialog\include\ImGuiFileDialog.h" />
+    <ClInclude Include="middleware\ImGuiFileDialog\include\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="middleware\imgui\include\imconfig.h" />
+    <ClInclude Include="middleware\imgui\include\imgui.h" />
+    <ClInclude Include="middleware\imgui\include\imgui_internal.h" />
+    <ClInclude Include="middleware\imgui\include\imstb_rectpack.h" />
+    <ClInclude Include="middleware\imgui\include\imstb_textedit.h" />
+    <ClInclude Include="middleware\imgui\include\imstb_truetype.h" />
+    <ClInclude Include="middleware\poly2tri\include\common\shapes.h" />
+    <ClInclude Include="middleware\poly2tri\include\common\utils.h" />
+    <ClInclude Include="middleware\poly2tri\include\poly2tri.h" />
+    <ClInclude Include="middleware\poly2tri\include\sweep\advancing_front.h" />
+    <ClInclude Include="middleware\poly2tri\include\sweep\cdt.h" />
+    <ClInclude Include="middleware\poly2tri\include\sweep\sweep.h" />
+    <ClInclude Include="middleware\poly2tri\include\sweep\sweep_context.h" />
+    <ClInclude Include="middleware\pugixml\include\pugiconfig.hpp" />
+    <ClInclude Include="middleware\pugixml\include\pugixml.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\AlResource.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\InputSoundFile.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\OutputSoundFile.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileFactory.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileReader.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundFileWriter.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Audio\SoundStream.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Config.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\GpuPreference.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\VertexBuffer.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Main.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Export.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Ftp.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Http.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\IpAddress.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Packet.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\SocketHandle.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\SocketSelector.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\TcpListener.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\TcpSocket.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Network\UdpSocket.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\OpenGL.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Clock.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Err.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Export.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\FileInputStream.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\InputStream.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Lock.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\MemoryInputStream.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Mutex.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\NativeActivity.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\NonCopyable.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Sleep.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\String.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Thread.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\ThreadLocal.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\ThreadLocalPtr.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Time.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Utf.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Vector2.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\System\Vector3.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Clipboard.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Context.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Cursor.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Event.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Export.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Sensor.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Touch.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Vulkan.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\Window.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowBase.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="middleware\SFML\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="middleware\SquidTasks\include\FunctionGuard.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Task.h" />
+    <ClInclude Include="middleware\SquidTasks\include\TaskFence.h" />
+    <ClInclude Include="middleware\SquidTasks\include\TaskFSM.h" />
+    <ClInclude Include="middleware\SquidTasks\include\TaskManager.h" />
+    <ClInclude Include="middleware\SquidTasks\include\TasksConfig.h" />
+    <ClInclude Include="middleware\SquidTasks\include\TasksCppFeatures.h" />
+    <ClInclude Include="middleware\SquidTasks\include\Tokens.h" />
+    <ClInclude Include="src\AimReticle.h" />
+    <ClInclude Include="src\AimReticleManager.h" />
+    <ClInclude Include="src\Dialogue.h" />
+    <ClInclude Include="src\Engine\LayerManager.h" />
+    <ClInclude Include="src\MenuItemDefs.h" />
+    <ClInclude Include="src\ParticleSpawnerDefs.h" />
+    <ClInclude Include="src\PickupDefs.h" />
+    <ClInclude Include="src\Projectiles\Grenade.h" />
+    <ClInclude Include="src\Projectiles\GrenadeDefs.h" />
+    <ClInclude Include="src\Projectiles\HomingMissile.h" />
+    <ClInclude Include="src\Projectiles\HomingMissileDefs.h" />
+    <ClInclude Include="src\Projectiles\WaveBeam.h" />
+    <ClInclude Include="src\Projectiles\WaveBeamDefs.h" />
+    <ClInclude Include="src\SquirrelNoise5.h" />
+    <ClInclude Include="src\Bomb.h" />
+    <ClInclude Include="src\CameraManager.h" />
+    <ClInclude Include="src\DestroyedTile.h" />
+    <ClInclude Include="src\Door.h" />
+    <ClInclude Include="src\DropManager.h" />
+    <ClInclude Include="src\Effect.h" />
+    <ClInclude Include="src\Engine\CollisionWorld.h" />
+    <ClInclude Include="src\Engine\Components\ColliderComponent.h" />
+    <ClInclude Include="src\Engine\Curve.h" />
+    <ClInclude Include="src\Engine\Components\SensorComponent.h" />
+    <ClInclude Include="src\Creature.h" />
+    <ClInclude Include="src\CreatureSpawner.h" />
+    <ClInclude Include="src\Engine\EaseTo.h" />
+    <ClInclude Include="src\Engine\Editor\DebugTimeControls.h" />
+    <ClInclude Include="src\Engine\Editor\EditorMode.h" />
+    <ClInclude Include="src\Engine\Editor\ImguiCurveWidget.h" />
+    <ClInclude Include="src\Engine\Editor\ImguiIntegration.h" />
+    <ClInclude Include="src\Engine\PaletteSet.h" />
+    <ClInclude Include="src\Engine\Shader.h" />
+    <ClInclude Include="src\AudioManager.h" />
+    <ClInclude Include="src\FunFactsWidget.h" />
+    <ClInclude Include="src\Hud.h" />
+    <ClInclude Include="src\Lava.h" />
+    <ClInclude Include="src\PauseMenu.h" />
+    <ClInclude Include="src\MenuItem.h" />
+    <ClInclude Include="src\Particle.h" />
+    <ClInclude Include="src\ParticleManager.h" />
+    <ClInclude Include="src\ParticleSpawner.h" />
+    <ClInclude Include="src\Pickup.h" />
+    <ClInclude Include="src\PlayerStatus.h" />
+    <ClInclude Include="src\Projectile.h" />
+    <ClInclude Include="src\ProjectileManager.h" />
+    <ClInclude Include="src\GameWorld.h" />
+    <ClInclude Include="src\SavePoint.h" />
+    <ClInclude Include="src\SensorManager.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\Engine\Actor.h" />
+    <ClInclude Include="src\Engine\Anim.h" />
+    <ClInclude Include="src\Engine\AssetCache.h" />
+    <ClInclude Include="src\Engine\Box.h" />
+    <ClInclude Include="src\Engine\Components\DrawComponent.h" />
+    <ClInclude Include="src\Engine\Components\SceneComponent.h" />
+    <ClInclude Include="src\Engine\Components\ShapeComponent.h" />
+    <ClInclude Include="src\Engine\Components\SpriteComponent.h" />
+    <ClInclude Include="src\Engine\Components\TextComponent.h" />
+    <ClInclude Include="src\Engine\Components\TilesComponent.h" />
+    <ClInclude Include="src\Engine\DebugDrawSystem.h" />
+    <ClInclude Include="src\Engine\Delegate.h" />
+    <ClInclude Include="src\Engine\Font.h" />
+    <ClInclude Include="src\Engine\Game.h" />
+    <ClInclude Include="src\Engine\GameWindow.h" />
+    <ClInclude Include="src\Engine\Guard.h" />
+    <ClInclude Include="src\Engine\HistoryBuffer.h" />
+    <ClInclude Include="src\Engine\InputSystem.h" />
+    <ClInclude Include="src\Engine\MathCore.h" />
+    <ClInclude Include="src\Engine\MathDynamics.h" />
+    <ClInclude Include="src\Engine\MathEasings.h" />
+    <ClInclude Include="src\Engine\MathGeometry.h" />
+    <ClInclude Include="src\Engine\MathRandom.h" />
+    <ClInclude Include="src\Engine\MinMax.h" />
+    <ClInclude Include="src\Engine\Object.h" />
+    <ClInclude Include="src\Engine\PhysicsSystem.h" />
+    <ClInclude Include="src\Engine\Polygon.h" />
+    <ClInclude Include="src\Engine\RenderTexture.h" />
+    <ClInclude Include="src\Engine\SpriteSheet.h" />
+    <ClInclude Include="src\Engine\StringUtils.h" />
+    <ClInclude Include="src\Engine\Texture.h" />
+    <ClInclude Include="src\Engine\TileMap.h" />
+    <ClInclude Include="src\Engine\Time.h" />
+    <ClInclude Include="src\Engine\Trajectory.h" />
+    <ClInclude Include="src\Engine\Transform.h" />
+    <ClInclude Include="src\Engine\Vec2.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\GameActor.h" />
+    <ClInclude Include="src\GameEnums.h" />
+    <ClInclude Include="src\GameLoop.h" />
+    <ClInclude Include="src\Suit.h" />
+    <ClInclude Include="src\TextDefs.h" />
+    <ClInclude Include="src\TitleChar.h" />
+    <ClInclude Include="src\Trigger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AsteroidField.cpp" />
+    <ClCompile Include="src\Creatures\Blobber.cpp" />
+    <ClCompile Include="src\Creatures\Charger.cpp" />
+    <ClCompile Include="src\Creatures\Crawler.cpp" />
+    <ClCompile Include="src\Creatures\Cruiser.cpp" />
+    <ClCompile Include="src\Creatures\Dropper.cpp" />
+    <ClCompile Include="src\Creatures\Laser.cpp" />
+    <ClCompile Include="src\Creatures\Monopod.cpp" />
+    <ClCompile Include="src\Creatures\Piper.cpp" />
+    <ClCompile Include="src\Creatures\Pirate.cpp" />
+    <ClCompile Include="src\Creatures\Rammer.cpp" />
+    <ClCompile Include="src\Creatures\Sentry.cpp" />
+    <ClCompile Include="src\Creatures\Ship.cpp" />
+    <ClCompile Include="src\Creatures\Swooper.cpp" />
+    <ClCompile Include="src\Creatures\Turret.cpp" />
+    <ClCompile Include="src\LightElement.cpp" />
+    <ClCompile Include="middleware\clipper\include\clipper.cpp" />
+    <ClCompile Include="middleware\ImGuiFileDialog\include\ImGuiFileDialog.cpp" />
+    <ClCompile Include="middleware\imgui\include\imgui.cpp" />
+    <ClCompile Include="middleware\imgui\include\imgui_draw.cpp" />
+    <ClCompile Include="middleware\imgui\include\imgui_tables.cpp" />
+    <ClCompile Include="middleware\imgui\include\imgui_widgets.cpp" />
+    <ClCompile Include="middleware\poly2tri\include\common\shapes.cc" />
+    <ClCompile Include="middleware\poly2tri\include\sweep\advancing_front.cc" />
+    <ClCompile Include="middleware\poly2tri\include\sweep\cdt.cc" />
+    <ClCompile Include="middleware\poly2tri\include\sweep\sweep.cc" />
+    <ClCompile Include="middleware\poly2tri\include\sweep\sweep_context.cc" />
+    <ClCompile Include="middleware\pugixml\include\pugixml.cpp" />
+    <ClCompile Include="src\Light.cpp" />
+    <ClCompile Include="src\AimReticle.cpp" />
+    <ClCompile Include="src\AimReticleManager.cpp" />
+    <ClCompile Include="src\AudioManager.cpp" />
+    <ClCompile Include="src\CameraManager.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\Creature.cpp" />
+    <ClCompile Include="src\CreatureSpawner.cpp" />
+    <ClCompile Include="src\DestroyedTile.cpp" />
+    <ClCompile Include="src\Dialogue.cpp" />
+    <ClCompile Include="src\Door.cpp" />
+    <ClCompile Include="src\DropManager.cpp" />
+    <ClCompile Include="src\Effect.cpp" />
+    <ClCompile Include="src\Engine\Actor.cpp" />
+    <ClCompile Include="src\Engine\Anim.cpp" />
+    <ClCompile Include="src\Engine\CollisionWorld.cpp" />
+    <ClCompile Include="src\Engine\Components\ColliderComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\DrawComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\SceneComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\ShapeComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\SensorComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\SpriteComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\TextComponent.cpp" />
+    <ClCompile Include="src\Engine\Components\TilesComponent.cpp" />
+    <ClCompile Include="src\Engine\Curve.cpp" />
+    <ClCompile Include="src\Engine\DebugDrawSystem.cpp" />
+    <ClCompile Include="src\Engine\Editor\DebugTimeControls.cpp" />
+    <ClCompile Include="src\Engine\Editor\EditorMode.cpp" />
+    <ClCompile Include="src\Engine\Editor\ImguiIntegration.cpp" />
+    <ClCompile Include="src\Engine\Font.cpp" />
+    <ClCompile Include="src\Engine\Game.cpp" />
+    <ClCompile Include="src\Engine\GameWindow.cpp" />
+    <ClCompile Include="src\Engine\InputSystem.cpp" />
+    <ClCompile Include="src\Engine\LayerManager.cpp" />
+    <ClCompile Include="src\Engine\MathEasings.cpp" />
+    <ClCompile Include="src\Engine\MathGeometry.cpp" />
+    <ClCompile Include="src\Engine\Object.cpp" />
+    <ClCompile Include="src\Engine\PaletteSet.cpp" />
+    <ClCompile Include="src\Engine\PhysicsSystem.cpp" />
+    <ClCompile Include="src\Engine\Polygon.cpp" />
+    <ClCompile Include="src\Engine\RenderTexture.cpp" />
+    <ClCompile Include="src\Engine\Shader.cpp" />
+    <ClCompile Include="src\Engine\SpriteSheet.cpp" />
+    <ClCompile Include="src\Engine\Texture.cpp" />
+    <ClCompile Include="src\Engine\TileMap.cpp" />
+    <ClCompile Include="src\Engine\Time.cpp" />
+    <ClCompile Include="src\Engine\Transform.cpp" />
+    <ClCompile Include="src\Engine\Vec2.cpp" />
+    <ClCompile Include="src\FunFactsWidget.cpp" />
+    <ClCompile Include="src\Hud.cpp" />
+    <ClCompile Include="src\Lava.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\PauseMenu.cpp" />
+    <ClCompile Include="src\MenuItem.cpp" />
+    <ClCompile Include="src\Particle.cpp" />
+    <ClCompile Include="src\ParticleManager.cpp" />
+    <ClCompile Include="src\ParticleSpawner.cpp" />
+    <ClCompile Include="src\Pickup.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PlayerStatus.cpp" />
+    <ClCompile Include="src\Projectile.cpp" />
+    <ClCompile Include="src\ProjectileManager.cpp" />
+    <ClCompile Include="src\Projectiles\Grenade.cpp" />
+    <ClCompile Include="src\Projectiles\HomingMissile.cpp" />
+    <ClCompile Include="src\Projectiles\WaveBeam.cpp" />
+    <ClCompile Include="src\GameActor.cpp" />
+    <ClCompile Include="src\GameLoop.cpp" />
+    <ClCompile Include="src\GameWorld.cpp" />
+    <ClCompile Include="src\SavePoint.cpp" />
+    <ClCompile Include="src\SensorManager.cpp" />
+    <ClCompile Include="src\Bomb.cpp" />
+    <ClCompile Include="src\Suit.cpp" />
+    <ClCompile Include="src\TitleChar.cpp" />
+    <ClCompile Include="src\Trigger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="middleware\SFML\include\SFML\Audio\SoundFileFactory.inl" />
+    <None Include="middleware\SFML\include\SFML\Graphics\Glsl.inl" />
+    <None Include="middleware\SFML\include\SFML\Graphics\Rect.inl" />
+    <None Include="middleware\SFML\include\SFML\System\String.inl" />
+    <None Include="middleware\SFML\include\SFML\System\Thread.inl" />
+    <None Include="middleware\SFML\include\SFML\System\ThreadLocalPtr.inl" />
+    <None Include="middleware\SFML\include\SFML\System\Utf.inl" />
+    <None Include="middleware\SFML\include\SFML\System\Vector2.inl" />
+    <None Include="middleware\SFML\include\SFML\System\Vector3.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ENGINE.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

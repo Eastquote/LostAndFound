@@ -1,0 +1,15 @@
+7ceb55f07f829a1c095321c782b0cc40
+
+# Meta
+name DashReticle
+num_sprites 4
+dims_image 98 136
+dims_frame 96 32
+dims_padded 98 34
+dims_grid 1 4
+padding 1
+origin 9 15
+framerate 20
+
+# Anims
+DashReticle 0 1 2 3

@@ -1,0 +1,15 @@
+a018ca30784705ffa28797d65ea3bf54
+
+# Meta
+name Swooper
+num_sprites 2
+dims_image 26 36
+dims_frame 24 16
+dims_padded 26 18
+dims_grid 1 2
+padding 1
+origin 12 8
+framerate 20
+palettize 1
+# Anims
+Normal 0 1

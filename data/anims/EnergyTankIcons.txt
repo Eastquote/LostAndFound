@@ -1,0 +1,14 @@
+e7c9838f646e954bf89a586f5016842b
+
+# Meta
+name EnergyTankIcons
+num_sprites 3
+dims_image 16 16
+dims_frame 6 6
+dims_padded 8 8
+dims_grid 2 2
+padding 1
+framerate 30
+
+# Anims
+Icons 0 1 2

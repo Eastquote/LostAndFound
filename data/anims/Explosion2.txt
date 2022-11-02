@@ -1,0 +1,15 @@
+fbe9eecdebd8bdef00fd8940d69cd5d6
+
+# Meta
+name Explosion2
+num_sprites 11
+dims_image 196 174
+dims_frame 47 56
+dims_padded 49 58
+dims_grid 4 3
+padding 1
+origin 24 28
+framerate 30
+
+# Anims
+Explosion 0 1 2 3 4 5 6 7 8 9 10

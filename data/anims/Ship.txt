@@ -1,0 +1,16 @@
+28f7d30d054fdfe34616d4de0a0283c1
+
+# Meta
+name Ship
+num_sprites 2
+dims_image 162 196
+dims_frame 160 96
+dims_padded 162 98
+dims_grid 1 2
+padding 1
+origin 80 16
+framerate 10
+palettize 0
+# Anims
+Idle 0
+IdleBlight 1

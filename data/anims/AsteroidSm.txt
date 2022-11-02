@@ -1,0 +1,15 @@
+ae2776dbff6fde3192317a133bd7a618
+
+# Meta
+name AsteroidSm
+num_sprites 2
+dims_image 46 74
+dims_frame 44 35
+dims_padded 46 37
+dims_grid 1 2
+padding 1
+origin 22 18
+framerate 20
+
+# Anims
+AsteroidSm 0 1

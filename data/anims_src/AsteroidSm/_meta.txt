@@ -1,0 +1,2 @@
+origin 22 18
+framerate 20

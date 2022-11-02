@@ -1,0 +1,15 @@
+bc06a6573ada1925ee4d0b5e4eced75c
+
+# Meta
+name ItemCharge
+num_sprites 6
+dims_image 52 78
+dims_frame 24 24
+dims_padded 26 26
+dims_grid 2 3
+padding 1
+origin 12 16
+framerate 10
+
+# Anims
+Idle 0 1 2 3 4 5

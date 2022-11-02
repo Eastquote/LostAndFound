@@ -1,0 +1,15 @@
+a540adf74210045e39c6d4e85c928536
+
+# Meta
+name ShotBeam
+num_sprites 5
+dims_image 24 30
+dims_frame 10 8
+dims_padded 12 10
+dims_grid 2 3
+padding 1
+origin 8 4
+framerate 30
+
+# Anims
+Idle 0 1 2 3 4

@@ -1,0 +1,15 @@
+450b61b2f583b349e52930db1b6f315d
+
+# Meta
+name JetFire
+num_sprites 4
+dims_image 60 58
+dims_frame 18 27
+dims_padded 20 29
+dims_grid 3 2
+padding 1
+origin 9 0
+framerate 60
+palettize 0
+# Anims
+Idle 0 1 2 3

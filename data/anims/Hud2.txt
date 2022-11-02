@@ -1,0 +1,15 @@
+8b1f36d39a65a895b290e6fcb5a3f47b
+
+# Meta
+name Hud2
+num_sprites 1
+dims_image 19 17
+dims_frame 17 15
+dims_padded 19 17
+dims_grid 1 1
+padding 1
+origin 0 0
+framerate 0
+
+# Anims
+En 0

@@ -1,0 +1,20 @@
+761590396f971d150ff96b94c0370a21
+
+# Meta
+name Blobber
+num_sprites 22
+dims_image 250 235
+dims_frame 48 45
+dims_padded 50 47
+dims_grid 5 5
+padding 1
+origin 23 26
+framerate 10
+
+# Anims
+IdleLarge 0
+IdleSmall 1
+JumpLarge 2 3 4 5 6 7 8 9 10 11 12 13 14
+LandLarge 15 16 17
+TransitionDown 18 19
+TransitionUp 20 21
