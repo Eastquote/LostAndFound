@@ -1,10 +1,9 @@
 # LOST & FOUND
 ### A 2D action platformer prototype written from scratch with C++14 and C++ coroutines.
-#### You can download and play a compiled binary [here](https://mikeprimo.itch.io/lost-and-found)!
 
 ![](https://github.com/Eastquote/LostAndFound/blob/main/data/docs/Gameplay01.gif)
 
-
+### [--> You can download and play a compiled binary HERE! <--](https://mikeprimo.itch.io/lost-and-found)
 
 This game makes extensive use of Giant Squid's open-source [C++ coroutine implementation](https://github.com/westquote/SquidTasks), which can be found in [middleware/SquidTasks](https://github.com/Eastquote/LostAndFound/tree/main/middleware/SquidTasks). If you intend to read my code and aren't familiar with coroutines already, you should probably watch this video explaining one of my other coroutine projects before you dig in:
 
