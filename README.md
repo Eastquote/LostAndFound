@@ -10,28 +10,28 @@ This game makes extensive use of Giant Squid's open-source [C++ coroutine implem
 [![Intro To C++ Coroutines for Game Development](https://img.youtube.com/vi/HrKnT5MHEoY/0.jpg)](https://www.youtube.com/watch?v=HrKnT5MHEoY?t=24)
 
 ## FRAMEWORK NOTE
-This project uses a lightweight "learning" framework (located in the *[src/Engine](https://github.com/Eastquote/LostAndFound/tree/main/src/Engine)* folder) that was written on top of [SFML](https://www.sfml-dev.org/) by [Tim Ambrogi](https://github.com/westquote) *(Giant Squid)* with help from [Drew Wallace](http://www.drewwallacegames.com/) *(Naughty Dog)*. It was designed to provide only what was necessary to learn to build a proper game, and mostly comprises:
+This project uses a lightweight "learning" framework (located in the *[src/Engine](https://github.com/Eastquote/LostAndFound/tree/main/src/Engine)* folder) that was written on top of [SFML](https://www.sfml-dev.org/) by [Tim Ambrogi Saxon](https://github.com/westquote) *(Giant Squid)* with help from [Drew Wallace](http://www.drewwallacegames.com/) *(Naughty Dog)*. It was designed to provide only what was necessary to learn to build a proper game, and mostly comprises:
 
-- an [Object](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Object.h) base class with child object storage and Initialize() and Destroy() functions -- these get called after the constructor runs and before the destructor runs, respectively. (This should be a familiar paradigm for Unreal devs.)
-- Various useful Components for [Colliders](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/ColliderComponent.h), [Text](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/TextComponent.h), [Sprites](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/SpriteComponent.h), [Tiles](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/TilesComponent.h), etc.
-- an [Actor](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Actor.h) base class that includes Transforms and Component factories.
+- an [`Object`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Object.h) base class with child object storage and Initialize() and Destroy() functions -- these get called after the constructor runs and before the destructor runs, respectively. (This should be a familiar paradigm for Unreal devs.)
+- Various useful Components for [`Colliders`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/ColliderComponent.h), [`Text`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/TextComponent.h), [`Sprites`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/SpriteComponent.h), [`Tiles`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Components/TilesComponent.h), etc.
+- an [`Actor`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/Actor.h) base class that includes Transforms and Component factories.
 - a Box2D integration (unused).
-- [MathGeometry](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathGeometry.h), a collection of low-level geometry functions that I used (along with the [SweepBox()](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/CollisionWorld.h#L29) function) to implement the game's physics.
-- Various other useful Math functions ([MathCore](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathCore.h), [MathRandom](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathRandom.h), [MathEasings](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathEasings.h), etc.)
-- [TileMap](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/TileMap.h), a class that can load/parse a [Tiled](https://www.mapeditor.org/) map file and make it available for game logic and rendering purposes.
-- [GameWindow](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/GameWindow.h), a wrapper for SFML functionality that configures the view into the game that gets rendered.
-- [InputSystem](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/InputSystem.h), another SFML wrapper which captures and interprets low-level input from mouse/keyboard/controllers.
+- [`MathGeometry`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathGeometry.h), a collection of low-level geometry functions that I used (along with the [`SweepBox()`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/CollisionWorld.h#L29) function) to implement the game's physics.
+- Various other useful Math functions ([`MathCore`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathCore.h), [`MathRandom`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathRandom.h), [`MathEasings`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/MathEasings.h), etc.)
+- [`TileMap`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/TileMap.h), a class that can load/parse a [Tiled](https://www.mapeditor.org/) map file and make it available for game logic and rendering purposes.
+- [`GameWindow`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/GameWindow.h), a wrapper for SFML functionality that configures the view into the game that gets rendered.
+- [`InputSystem`](https://github.com/Eastquote/LostAndFound/blob/main/src/Engine/InputSystem.h), another SFML wrapper which captures and interprets low-level input from mouse/keyboard/controllers.
 
 ---
 <br>
-Because I was actively learning C++ as I wrote this game, the quality and sophistication of the code varies depending on when in the development cycle it was written. That said, I feel that the following samples accurately represent my current skill level:
+Because I was actively learning C++ as I wrote this game, the quality and sophistication of the code varies depending on when in the development cycle it was written. That said, I feel that the following samples accurately represent my current capabilities:
 
 ## CODE SAMPLE 1 : [PLAYER FSM](https://github.com/Eastquote/LostAndFound/blob/main/src/Player.cpp#L345)
 ![](https://github.com/Eastquote/LostAndFound/blob/main/data/docs/FSMHeader.jpg)<br>
-The Player controller class employs a Finite State Machine (FSM) implementation that comes with the SquidTasks library mentioned above. It allows me to specify:
-- all of my player character's possible movement **States** (e.g. JumpState(), FallState(), etc.)
+The Player controller class was built using a Finite State Machine (FSM) implementation that comes with the SquidTasks library mentioned above. It allows me to specify:
+- all of my player character's possible movement **States** (e.g. `JumpState()`, `FallState()`, etc.)
 - a prioritized network of **StateLinks** between them (aka **"Exits"**)
-- the **predicate functions** for determining when transitions can occur (e.g ShouldEnterJumpState(), IsGrounded(), etc.)
+- the **transition predicate functions** for determining when state transitions can occur (e.g `ShouldEnterJumpState()`, `IsGrounded()`, etc.)
 
 *Lost & Found* has a fairly complex character controller, so this is what the FSM setup looks like:
 ```cpp
@@ -163,7 +163,7 @@ Task<> Player::ManagePlayerFSM() {
 	});
 ```
 
-Let's go over a simple transition from the IdleState() to the JumpState(). Here is the IdleState() coroutine:
+Let's go over a simple transition from the `IdleState()` to the `JumpState()`. Here is the `IdleState()` coroutine:
 
 ```cpp
 Task<> Player::IdleState() {
@@ -194,21 +194,21 @@ Task<> Player::IdleState() {
 }
 ```
 
-Every tick, the FSM will determine whether to leave the current state by sequentially evaluating all of that state's "Exit" Link predicates. In the case of IdleState(), these are:
+Every tick, the FSM will determine whether to leave the current state by sequentially evaluating all of that state's "Exit" Link predicates. In the case of `IdleState()`, these are:
 
 ```cpp
 // Idle Exits
-	fsm.StateLinks(idleState, { //< These link predicates are sequentially evaluated until one of them returns True
-		fishTransitioningState.Link([this] { return ShouldEnterFishJumpState(); }),
-		jumpState.Link([this] { return ShouldEnterJumpState(); }), //< This is the link this example is focused on
-		fallState.Link([this] { return ShouldEnterFallState(); }),
-		moveState.Link([this] { return ShouldEnterMoveState(false); }),
-		ballFallTransitioningState.Link([this] { return ShouldEnterBallFallState(); }),
-		bounceState.Link([this] { return ShouldBounce(); }),
-	});
+fsm.StateLinks(idleState, { //< These link predicates are sequentially evaluated until one of them returns True
+	fishTransitioningState.Link([this] { return ShouldEnterFishJumpState(); }),
+	jumpState.Link([this] { return ShouldEnterJumpState(); }), //< This is the link this example is focused on
+	fallState.Link([this] { return ShouldEnterFallState(); }),
+	moveState.Link([this] { return ShouldEnterMoveState(false); }),
+	ballFallTransitioningState.Link([this] { return ShouldEnterBallFallState(); }),
+	bounceState.Link([this] { return ShouldBounce(); }),
+});
 ```
-First on the list is the fishTransitioningState Link, which calls ShouldEnterFishJumpState() and will return false in this case.<br>
-The FSM will then proceed to the next Link on the list (the jumpState link) and call its predicate function: ShouldEnterJumpState().
+First on the list is the `fishTransitioningState` Link, which calls `ShouldEnterFishJumpState()` and will return false in this case.<br>
+The FSM will then proceed to the next Link on the list (the `jumpState` link) and call its predicate function: `ShouldEnterJumpState()`.
 
 ```cpp
 bool Player::ShouldEnterJumpState() {
@@ -221,8 +221,8 @@ bool Player::ShouldEnterJumpState() {
 }
 ```
 
-That ***canJump*** variable reports if any of the (many) situations that allow the player to jump is currently true. The ***justJumped*** variable reports whether a jump is actually desired at this time.<br>
-If both come back true, then ShouldEnterJumpState() returns true and the FSM will dutifully create and resume the JumpState() coroutine:
+That `canJump` variable reports if any of the (many) situations that allow the player to jump is currently true. The `justJumped` variable reports whether a jump is actually desired at this time.<br>
+If both come back true, then `ShouldEnterJumpState()` returns true and the FSM will dutifully create and resume the `JumpState()` coroutine:
 
 ```cpp
 Task<> Player::JumpState() {
@@ -367,7 +367,7 @@ Task<> Player::JumpState() {
 }
 ```
 
-Certain affordances of the player controller, like using weapons or aiming vertically, can be thought of as orthogonal states that run in parallel to the main player-movement FSM. You can see these parallel tasks being added to the Player's TaskManager here in the ManageActor() task:
+Certain affordances of the player controller, like using weapons or aiming vertically, can be thought of as orthogonal states that run in parallel to the main player-movement FSM. You can see these parallel tasks being added to the Player's TaskManager here in the `ManageActor()` task:
 
 ```cpp
 Task<> Player::ManageActor() {
@@ -393,12 +393,12 @@ All told, this formalized FSM approach made it possible to largely avoid the spa
 
 ## CODE SAMPLE 2 : [DIALOGUE SYSTEM](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.h)
 ![](https://github.com/Eastquote/LostAndFound/blob/main/data/docs/DialogueHeader.jpg)<br>
-For this game I settled on a Dialogue system that makes use of 3 main objects: [Scenes](https://github.com/Eastquote/LostAndFound/blob/main/src/GameLoop.cpp#L333) (line data), [DialogueSpeakers](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.h#L40) (character data), and [Dialogues](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.h#L76) (machines for executing conversations between Speakers, using Scene data.)
+For this game I settled on a Dialogue system that makes use of 3 main objects: [`Scenes`](https://github.com/Eastquote/LostAndFound/blob/main/src/GameLoop.cpp#L333) (line data), [`DialogueSpeakers`](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.h#L40) (character data), and [`Dialogues`](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.h#L76) (machines for executing conversations between Speakers, using Scene data.)
 
-This approach allowed me to compartmentalize the complexity of a multi-character dramatic scene with good maintainability -- when I had to quickly re-write the [teletyping line parser](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.cpp#L138) for a public demo, no data format changes were necessary and all the relevant implementation lived inside the PlayLine() function:
+This approach allowed me to compartmentalize the complexity of a multi-character dramatic scene with good maintainability -- when I had to quickly re-write the [teletyping line parser](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.cpp#L138) for a public demo, no data format changes were necessary and all the relevant implementation lived inside the `PlayLine()` function:
 
 ```cpp
-  Task<> DialogueSpeaker::PlayLine(const SceneLine& in_line) {
+Task<> DialogueSpeaker::PlayLine(const SceneLine& in_line) {
 	// Create necessary locals
 	std::shared_ptr<ButtonState> advanceButton = m_instigator->GetAdvanceButton();
 	m_textHeading->SetText(m_def->m_name);
@@ -471,13 +471,13 @@ Task<> DialogueSpeaker::TeletypeLine(std::wstring& in_text, std::wstring& in_lin
 }
 ```
 
-(A notable blemish on this code is the fact that SpeakerDef and SceneDef data are still [populated in hardcode](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.cpp#L17) -- best practice would be for them to be read in from JSON files or similar, so other team members could create/edit them without touching the codebase directly. As I was solo-ing this project with a lot of other features on my plate, I deprioritized this task, but it would be Job #1 if I were to return to this system for further improvements.)
+(A notable limitation of this code is the fact that SpeakerDef and SceneDef data are still [populated in hardcode](https://github.com/Eastquote/LostAndFound/blob/main/src/Dialogue.cpp#L17) -- best practice would be for them to be read in from JSON files or similar, so other team members could create/edit them without touching the codebase directly. As I was solo-ing this project with a lot of other features on my plate, I deprioritized this task, but it would be Job #1 if I were to return to this system for further improvements.)
 
 ## CODE SAMPLE 3 : [LIGHT SYSTEM](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.h)
 ![](https://github.com/Eastquote/LostAndFound/blob/main/data/docs/LightHeader.jpg)<br>
-This circular Light actor has potential to used in a wide variety of contexts, so it was important to give it exactly the right set of features to do its job as elegantly as possible. 
+This circular `Light` actor has potential to used in a wide variety of contexts, so it was important to give it exactly the right set of features to do its job as elegantly as possible. 
 
-Of particular note is a nice bit of coroutine business in the [InterpScale()](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.cpp#L28) and [ManageInterpScale()](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.cpp#L32) functions, which allow me to change the size of a given Light actor over a specified duration in seconds:
+Of particular note is a nice bit of coroutine business in the [`InterpScale()`](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.cpp#L28) and [`ManageInterpScale()`](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.cpp#L32) functions, which allow me to change the size of a given `Light` actor over a specified duration in seconds:
 
 ```cpp
 TaskHandle<> Light::InterpScale(float in_targetScale, float in_duration) {
@@ -493,9 +493,11 @@ Task<> Light::ManageInterpScale(float in_targetScale, float in_duration) {
 }
 ```
 
-InterpScale() actually invokes ManageInterpScale() as a sub-task, a handle to which is then added to the Light Actor's m_taskMgr list -- this means the ManageInterpScale() sub-task survives the collapse of the InterpScale() stack frame, so you can "fire and forget" InterpScale() from anywhere. Even though it may be configured to take many seconds or even minutes to finish executing, you can trust that it'll do so safely.
+`InterpScale()` invokes `ManageInterpScale()` as a sub-task, a handle to which is then added to the Light Actor's `m_taskMgr` list. This means the `ManageInterpScale()` sub-task *survives* the collapse of the `InterpScale()` stack frame, so you can "fire and forget" `InterpScale()` from anywhere -- even though it may be configured to take many seconds or even minutes to finish executing, you can trust that it'll do so safely.
 
-For its part, ManageInterpScale() passes the targetScale and duration parameters to both the m_core and m_penumbra LightElements of the Light actor, and co_awaits their scale interpolations to completion. The LightElements themselves employ this same pattern for their respective [InterpScale()](https://github.com/Eastquote/LostAndFound/blob/main/src/LightElement.cpp#L23) tasks, and implement the scale interpolation itself:
+For its part, `ManageInterpScale()` passes the `in_targetScale` and `in_duration` parameters to *both* the `LightElements` of the `Light` actor (`m_core` and `m_penumbra`), and co_awaits their scale interpolations to completion.
+
+The `LightElements` themselves employ this same pattern for their respective `InterpScale()` tasks, and implement the scale interpolation itself:
 
 ```cpp
 TaskHandle<> LightElement::InterpScale(float in_targetScale, float in_duration) {
@@ -523,7 +525,7 @@ Task<> LightElement::ManageInterpScale(float in_targetScale, float in_duration) 
 }
 ```
 
-In practice, a [Light](https://github.com/Eastquote/LostAndFound/blob/main/src/Light.h) actor can trivially (and smoothly) appear/disappear or scale up/down from wherever you call InterpScale(). Critically, it can also be called from *outside* Task<> (i.e. coroutine) functions, as we do [here](https://github.com/Eastquote/LostAndFound/blob/main/src/Player.cpp#L138) in the Player's regular Initialize() function.
+In practice, a `Light` actor can trivially (and smoothly) appear/disappear or scale up/down from wherever you call `InterpScale()`. Critically, it can also be called from *outside* `Task<>` (i.e. coroutine) functions, as we do [here](https://github.com/Eastquote/LostAndFound/blob/main/src/Player.cpp#L138) in the Player's regular `Initialize()` function.
 
 As another typical use example, here we intentionally create a large light at the moment of the player's death (to accompany the explosion effect) and then interp it down to a scale of 0.0f in half a second:
 
