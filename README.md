@@ -463,7 +463,7 @@ Task<> DialogueSpeaker::TeletypeLine(std::wstring& in_text, std::wstring& in_lin
 		if(i % 2 == 0) { //< Play sound every other frame
 			audioMgr->PlaySound("Teletype", 0.05f);
 		}
-		if(float delay = in_buttonState->IsPressed() ? 0.0f : teletypeDelay) { //< Lets players Lets players speed it up
+		if(float delay = in_buttonState->IsPressed() ? 0.0f : teletypeDelay) { //< Let players speed it up
 			co_await WaitSeconds(delay);
 		}
 		co_await Suspend();
